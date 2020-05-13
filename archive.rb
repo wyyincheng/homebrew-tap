@@ -4,9 +4,9 @@
 class Archive < Formula
     desc ""
     homepage ""
-    version = 'v0.0.1'
-    url "https://github.com/wyyincheng/archive/releases/download/v0.0.1/archive_0.0.1_darwin_am64.tar.gz"
-    sha256 "a401d9abadc0729e9e9fb926f5c94470a6d2b0342d010e9da86209451b88450a"
+    version = 'v0.0.3'
+    url "https://github.com/wyyincheng/archive/releases/download/v0.0.3/archive_0.0.3_darwin_amd64.tar.gz"
+    sha256 "d1cf052ba477237a7646648cd9f5e93a530309350eba7a50f6e136cf1ed01788"
   
     def install
       bin.install "archive"
