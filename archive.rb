@@ -4,34 +4,16 @@
 class Archive < Formula
     desc ""
     homepage ""
-    url "https://github.com/wyyincheng/archive.git",
-        :tag => "v0.0.1",
-        :version => "28d9406ab4e4eba2b1dc8594a4fbe1dedb25936400a2a2153b94aaebd004f168"
-  
-    depends_on "go" => :build
-  
-    # bottle do
-    #   cellar :any_skip_relocation
-    #   sha256 "04a663475219eda96ad1df8a0c57f90509229c0593b6648ec47dae404d97db55" => :catalina
-    # end
+    version = 'v0.0.1'
+    url "https://github.com/wyyincheng/archive/releases/download/v0.0.1/archive_0.0.1_darwin_am64.tar.gz"
+    sha256 "a401d9abadc0729e9e9fb926f5c94470a6d2b0342d010e9da86209451b88450a"
   
     def install
-      ENV["GOPROXY"] = "https://goproxy.io"
-      system "make"
-      bin.install "bin/archive"
+      bin.install "archive"
     end
   
     test do
-      # `test do` will create, run in and delete a temporary directory.
-      #
-      # This test will fail and we won't accept that! For Homebrew/homebrew-core
-      # this will need to be a test that verifies the functionality of the
-      # software. Run the test with `brew test archive`. Options passed
-      # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
-      #
-      # The installed folder is not in the path, so use the entire path to any
-      # executables being tested: `system "#{bin}/program", "do", "something"`.
-      system "false"
+        system "#{bin}/archive", "--help"
     end
   end
   
