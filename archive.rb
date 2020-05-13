@@ -4,14 +4,13 @@
 class Archive < Formula
     desc ""
     homepage ""
-    url "https://github.com/wyyincheng/archive/archive/v0.0.1.tar.gz"
+    url "https://github.com/wyyincheng/archive.git"
     sha256 "28d9406ab4e4eba2b1dc8594a4fbe1dedb25936400a2a2153b94aaebd004f168"
   
     depends_on "go" => :build
   
     bottle do
       cellar :any_skip_relocation
-      url "https://github.com/wyyincheng/archive/releases/download/v0.0.1/archive_0.0.1_darwin_amd64"
       sha256 "04a663475219eda96ad1df8a0c57f90509229c0593b6648ec47dae404d97db55" => :catalina
     end
   
