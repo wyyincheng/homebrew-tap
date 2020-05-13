@@ -9,10 +9,10 @@ class Archive < Formula
   
     depends_on "go" => :build
   
-    bottle do
-      cellar :any_skip_relocation
-      sha256 "04a663475219eda96ad1df8a0c57f90509229c0593b6648ec47dae404d97db55" => :catalina
-    end
+    # bottle do
+    #   cellar :any_skip_relocation
+    #   sha256 "04a663475219eda96ad1df8a0c57f90509229c0593b6648ec47dae404d97db55" => :catalina
+    # end
   
     def install
       ENV["GOPROXY"] = "https://goproxy.io"
