@@ -5,7 +5,7 @@ class Archive < Formula
     desc ""
     homepage ""
     url "https://github.com/wyyincheng/archive.git",
-        :tag => "v0.0.1"
+        :tag => "v0.0.1",
         :version => "28d9406ab4e4eba2b1dc8594a4fbe1dedb25936400a2a2153b94aaebd004f168"
   
     depends_on "go" => :build
