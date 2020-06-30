@@ -4,9 +4,9 @@
 class Archive < Formula
     desc ""
     homepage ""
-    version = '0.0.12'
-    url "https://github.com/wyyincheng/archive/releases/download/v0.0.12/nwarchive.tar.gz"
-    sha256 "27bafc7884ec39b418c5d19b796be7f1825daac138418abf6dae986688635b1f"
+    version = '0.0.1'
+    url "https://github.com/wyyincheng/nwarchive/releases/download/v0.0.1/nwarchive.tar.gz"
+    sha256 "da884fc394cbab44337bfc433ddfd1c69fd00f31f9283b7a70b8c2c992397d4b"
   
     def install
       bin.install "nwarchive"
