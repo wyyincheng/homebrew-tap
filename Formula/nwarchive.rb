@@ -5,8 +5,8 @@ class Nwarchive < Formula
     desc ""
     homepage ""
     version = '0.0.2'
-    url "https://gitee.com/ekg/nwarchive/attach_files/424902/download"
-    sha256 "50c261f43a47bb2804aacd83cb135a84c132205ddd3d828033456a056264a4d6"
+    url "https://github.com/wyyincheng/nwarchive/releases/download/v0.0.2/nwarchive.tar.gz"
+    sha256 "0b40b3e704cd936f14cc898ab7ed29162aef93ec7634017d4bff1a77e638f3b4"
   
     def install
       bin.install "nwarchive"
